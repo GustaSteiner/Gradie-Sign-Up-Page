@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/Background.png);
+    background-position: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    display: flex;
+}
+
+/* LEFT AREA */
+.left-area {
+    width: 400px;
+    background-color: #083444;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    flex-direction: column;
+}
+
+.title-left {
+    text-align: center;
+    margin-top: 29px;
+}
+
+.title-left > h1 {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.title-left > h3 {
+    margin-top: 10px;
+    font-weight: 300;
+    color: #81b9cd;
+}
+
+.container-img-iphone {
+    margin-top: 92px;
+}
+
+.img-iphone {
+    width: 400px;
+    display: flex;
+    align-items: flex-end;
+}
+
+/* RIGHT AREA */
+.right-area {
+    width: 50%;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.title-right > h1 {
+    font-size: 2em;
+    color: black;
+}
+
+.formulario {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.div-email {
+    margin: 25px 0px 25px 0px;
+}
+
+.div-password {
+    margin: 25px 0px 25px 0px;
+}
+
+input[type="password"],
+input[type="email"] {
+    border-radius: 5px;
+    border: 1px solid rgb(205, 204, 204); 
+    padding: 20px;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.terms-conditions {
+    font-weight: 400;
+    display: flex;
+}
+
+.terms-conditions b {
+    color: #083444;
+    cursor: pointer;
+}
+
+.terms-conditions b:hover {
+    color: #11607c;
+}
+
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.p-checkbox {
+    margin-left: 12px;
+}
+
+.btn-div {
+    margin-top: 30px;
+}
+
+.create-acc-btn {
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;    
+    border: none;
+    background-color: #083444;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.create-acc-btn:hover {
+    color: white;
+    background-color: #11607c;
+    transition: .3s;
+}
+
+/* TABLE VIEW */
+@media screen and (max-width: 992px) {
+.container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-area {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 00px;
+}
+
+.right-area {
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+    width: 400px;
+}
+
+.title-right > h1 {
+    margin-top: 29px;
+}
+
+ .create-acc-btn {
+     margin-bottom: 40px;
+ }
+
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 768px) {
+    body {
+        background-image: none;
+        background-color: gray;
+    }
+}
